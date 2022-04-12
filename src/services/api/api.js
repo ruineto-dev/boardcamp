@@ -12,7 +12,7 @@ const axiosWrapper = {};
 const queryStringBuilder = query => Object.keys(query).length ? '?' + Object.keys(query).map(k => `${k}=${query[k]}`).join('&') : '';
 
 const instance = axios.create({
-  baseURL: process.env.BASE_URL
+  baseURL: 'https://api-boardcamp-ruineto-dev.herokuapp.com'
 });
 
 for (const method of methods) {
